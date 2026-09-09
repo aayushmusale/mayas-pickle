@@ -49,7 +49,7 @@ export default function Home() {
     if (!selectedProduct || !selectedQuantity) return;
 
     // Use NEXT_PUBLIC_ prefixed environment variable for client side
-    const phoneNumber = process.env.WHATSAPP_NUMBER || "";
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "";
     
     if (!phoneNumber) {
       alert("WhatsApp number is not configured in the environment variables.");
